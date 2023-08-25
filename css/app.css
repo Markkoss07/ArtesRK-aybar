@@ -535,7 +535,7 @@ main section .ventadeProductos .producto .infoProducto button {
 }
 #formulario a button {
   border-radius: 10px;
-  background-color: #c7c7f3;
+  background-color: #f3d3c7;
   border: 0px solid;
 }
 #formulario a :hover {
@@ -558,7 +558,7 @@ main section .ventadeProductos .producto .infoProducto button {
   align-items: center;
   text-align: center;
   border-radius: 20px;
-  background-color: #c7eef3;
+  background-color: #f3d3c7;
 }
 #formulario .contenedorFormulario .informacion .infoBienvenida {
   width: 40%;

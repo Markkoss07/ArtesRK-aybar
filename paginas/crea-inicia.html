@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/barco-papel.jpg" type="image/x-icon">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../css/app.css">
+        <title>Formulario de registo e Inicio de sesión </title>
+    </head>
+    <body id="formulario">
+        <a href="../index.html"><button>Volver</button></a>
+        <div class="contenedorFormulario registrate">
+            <div class="informacion">
+                <div class="infoBienvenida">
+                    <h1>Bienvenido</h1>
+                    <p>Para disfrutar mas en nuestra pagina Inicia Sesión con tus datos</p>
+                    <input type="button" value="Iniciar Sesión" id="iniciar">
+                </div>
+                <div class="formularioInformacion">
+                    <div class="formularioCrear">
+                        <h2>Crear una Cuenta</h2>
+                        <div class="iconos">
+                            <i class='bx bxl-google'></i>
+                            <i class='bx bxl-facebook-circle' ></i>
+                        </div>
+                        <p>o usa tu mail para registrarte</p>
+                        <form class="form">
+                            <label>
+                                <i class='bx bx-user' ></i>
+                                <input type="text" id="nombreCompleto" placeholder="Nombre Completo">
+                            </label>
+                            <label>
+                                <i class='bx bx-envelope' ></i>
+                                <input type="email" id="correoElectronico" placeholder="Correo Electrónico">
+                            </label>
+                            <label>
+                                <i class='bx bx-lock-alt' ></i>
+                                <input type="password" id="contraseña" placeholder="Contraseña">
+                            </label>
+                            <input type="submit" value="Registrarse">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contenedorFormulario login oculto">
+            <div class="informacion">
+                <div class="infoBienvenida">
+                    <h1>Bienvenido Nuevamente</h1>
+                    <p>Para disfrutar mas en nuestra pagina Inicia Sesión con tus datos</p>
+                    <input type="button" value="Registrarse" id="inscribir">
+                </div>
+                <div class="formularioInformacion">
+                    <div class="formularioCrear">
+                        <h2>Iniciar Sesión</h2>
+                        <div class="iconos">
+                            <i class='bx bxl-google'></i>
+                            <i class='bx bxl-facebook-circle' ></i>
+                        </div>
+                        <p>o Inicio Sesión con otra cuenta</p>
+                        <form class="form">
+                            <label>
+                                <i class='bx bx-envelope' ></i>
+                                <input type="email" id="correoElectronico" placeholder="Correo Electronico">
+                            </label>
+                            <label>
+                                <i class='bx bx-lock-alt' ></i>
+                                <input type="password" id="contraseña" placeholder="Contraseña">
+                            </label>
+                            <input type="submit" value="Iniciar Sesión">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/formulario.js"></script>
+    </body>
+</html>

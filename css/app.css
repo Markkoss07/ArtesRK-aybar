@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+header {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+header a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+header a img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+header a h1 {
+  color: #000;
+  font-size: 45px;
+  font-family: "popping";
+  margin-left: 10px;
+  margin-top: 14px;
+}
+header .listaHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+header .listaHeader ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+header .listaHeader ul li {
+  list-style-type: none;
+  padding: 0px 12px;
+  border-right: 1px solid rgb(69, 69, 69);
+}
+header .listaHeader ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+}
+header .listaHeader ul :last-child {
+  border-right: 0px;
+}
+header .listaHeader .contenedorIcono {
+  position: relative;
+}
+header .listaHeader .contenedorIcono .iconoCarrito {
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+}
+header .listaHeader .contenedorIcono .iconoCarrito .contadorProducto {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+header .listaHeader .contenedorIcono .iconoCarrito .contadorProducto #contadordeProductos {
+  font-size: 12px;
+}
+header .listaHeader .contenedorIcono .iconoCarrito :hover {
+  cursor: pointer;
+}
+header .listaHeader .contenedorIcono .carritoOculto {
+  display: none;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .oculto {
+  display: none;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .filadeProducto .carritoProducto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .filadeProducto .carritoProducto .info-carrito-producto {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .filadeProducto .carritoProducto .info-carrito-producto .cantidad-producto-carrito {
+  font-weight: 400;
+  font-size: 20px;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .filadeProducto .carritoProducto .info-carrito-producto .titulo-producto-carrito {
+  font-size: 20px;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .filadeProducto .carritoProducto .info-carrito-producto .precio-producto-carrito {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .filadeProducto .carritoProducto .cerrarIcono {
+  width: 25px;
+  height: 25px;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .filadeProducto .carritoProducto .cerrarIcono :hover {
+  stroke: red;
+  cursor: pointer;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .carritoTotal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .carritoTotal .oculto {
+  display: none;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .carritoTotal h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .carritoTotal .totalPagar {
+  font-size: 20px;
+  font-weight: 900;
+}
+header .listaHeader .contenedorIcono .conteinercarroProducto .carritoVacio {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(125, 124, 124, 0.59);
+}
+footer .fondoFooter {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+footer .fondoFooter .logoFooter {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 100px;
+  text-decoration: none;
+}
+footer .fondoFooter .logoFooter img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+footer .fondoFooter .logoFooter p {
+  font-size: 40px;
+  font-family: "popping";
+  color: black;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+footer .fondoFooter .metodosPagos {
+  width: 400px;
+  height: max-content;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+footer .fondoFooter .metodosPagos p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "popping";
+  color: white;
+}
+footer .fondoFooter .metodosPagos .iconosPagos {
+  width: 100%;
+}
+footer .fondoFooter .metodosPagos .iconosPagos img {
+  width: 100%;
+  height: 180px;
+}
+footer .fondoFooter .formaEnvios {
+  width: 400px;
+  height: max-content;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+footer .fondoFooter .formaEnvios p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "popping";
+  color: white;
+}
+footer .fondoFooter .formaEnvios .iconosEnvios {
+  width: 100%;
+}
+footer .fondoFooter .formaEnvios .iconosEnvios img {
+  width: 80%;
+  height: 180px;
+}
+footer .fondoFooter .redesSociales {
+  width: 200px;
+  height: max-content;
+  margin-top: 100px;
+}
+footer .fondoFooter .redesSociales p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "popping";
+  color: white;
+}
+footer .fondoFooter .redesSociales .facebook {
+  margin-left: 10px;
+}
+footer .fondoFooter .redesSociales .twitter {
+  margin-left: 10px;
+}
+footer .credito {
+  background-color: white;
+  font-size: medium;
+  font-family: "popping";
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+}
+
+main {
+  height: 2800px;
+}
+main #carouselExampleIndicators {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+}
+main #carouselExampleIndicators .carousel-inner .carousel-item .divisionImagen1 {
+  display: flex;
+  flex-direction: row;
+}
+main #carouselExampleIndicators .carousel-inner .carousel-item .divisionImagen1 #imagenCarrusel1 {
+  height: 600px;
+  width: 950px;
+}
+main #carouselExampleIndicators .carousel-inner .carousel-item .divisionImagen1 #imagenCarrusel2 {
+  height: 600px;
+  width: 950px;
+  margin-left: 10px;
+}
+main #carouselExampleIndicators .carousel-inner .carousel-item .divisionImagen2 {
+  display: flex;
+  flex-direction: row;
+}
+main #carouselExampleIndicators .carousel-inner .carousel-item .divisionImagen2 #imagenCarrusel3 {
+  height: 600px;
+  width: 650px;
+  margin-left: 30px;
+}
+main #carouselExampleIndicators .carousel-inner .carousel-item .divisionImagen2 #imagenCarrusel4 {
+  height: 600px;
+  margin-left: 20px;
+}
+main #carouselExampleIndicators .carousel-inner .carousel-item .divisionImagen2 #imagenCarrusel5 {
+  height: 600px;
+  width: 700px;
+  margin-left: 20px;
+}
+main #carouselExampleIndicators .carousel-control-prev {
+  background-color: rgba(0, 0, 0, 0.508);
+  width: 150px;
+}
+main #carouselExampleIndicators .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.508);
+  width: 150px;
+}
+main section {
+  width: 70%;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main section .tiposdeObras {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+main section .tiposdeObras .cuadroArte1 {
+  width: 350px;
+  height: 320px;
+  margin-left: 70px;
+  margin-top: 40px;
+  background-color: white;
+  position: relative;
+}
+main section .tiposdeObras .cuadroArte1 .imgFondo1 img {
+  width: 100%;
+  height: 320px;
+}
+main section .tiposdeObras .cuadroArte1 .recuadro {
+  width: 90%;
+  height: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  background-color: transparent;
+  margin-top: -285px;
+  margin-left: 17px;
+  position: absolute;
+}
+main section .tiposdeObras .cuadroArte1 .recuadro p {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  font-family: "Popping";
+  font-size: 20px;
+  font-weight: 550;
+  text-transform: uppercase;
+  color: black;
+}
+main section .tiposdeObras .cuadroArte2 {
+  width: 350px;
+  height: 320px;
+  margin-left: 50px;
+  margin-top: 40px;
+  background-color: white;
+  position: relative;
+}
+main section .tiposdeObras .cuadroArte2 .imgFondo1 img {
+  width: 100%;
+  height: 320px;
+}
+main section .tiposdeObras .cuadroArte2 .recuadro {
+  width: 90%;
+  height: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  background-color: transparent;
+  margin-top: -285px;
+  margin-left: 17px;
+  position: absolute;
+}
+main section .tiposdeObras .cuadroArte2 .recuadro p {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  font-family: "Popping";
+  font-size: 20px;
+  font-weight: 550;
+  text-transform: uppercase;
+  color: black;
+}
+main section .tiposdeObras .cuadroArte3 {
+  width: 350px;
+  height: 320px;
+  margin-left: 50px;
+  margin-top: 40px;
+  background-color: white;
+  position: relative;
+}
+main section .tiposdeObras .cuadroArte3 .imgFondo1 img {
+  width: 100%;
+  height: 320px;
+}
+main section .tiposdeObras .cuadroArte3 .recuadro {
+  width: 90%;
+  height: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  background-color: transparent;
+  margin-top: -285px;
+  margin-left: 17px;
+  position: absolute;
+}
+main section .tiposdeObras .cuadroArte3 .recuadro p {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  font-family: "Popping";
+  font-size: 20px;
+  font-weight: 550;
+  text-transform: uppercase;
+  color: black;
+}
+main section .iconoSubir {
+  margin-left: 1550px;
+  position: fixed;
+}
+main section .iconoSubir img {
+  margin-top: -350px;
+}
+main section .obrasDestadas {
+  display: flex;
+  justify-content: center;
+}
+main section .obrasDestadas p {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+}
+main section .obrasDestadas ::after, main section .obrasDestadas ::before {
+  content: "";
+  position: absolute;
+  width: 490px;
+  height: 2px;
+  background-color: rgba(181, 178, 178, 0.374);
+  top: 15px;
+}
+main section .obrasDestadas ::before {
+  left: -520px;
+}
+main section .obrasDestadas ::after {
+  right: -520px;
+}
+main section .ventadeProductos {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main section .ventadeProductos .producto {
+  border-bottom-right-radius: 15px;
+  box-shadow: 9px 7px 5px 0px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 9px 7px 5px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 9px 7px 5px 0px rgba(0, 0, 0, 0.11);
+  margin-top: 20px;
+}
+main section .ventadeProductos .producto figure {
+  overflow: hidden;
+}
+main section .ventadeProductos .producto figure :hover {
+  transform: scale(1.2);
+}
+main section .ventadeProductos .producto figure img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+main section .ventadeProductos .producto figure .imagen1 {
+  width: 280px;
+  height: 380px;
+  margin-left: 40px;
+}
+main section .ventadeProductos .producto figure .imagen2 {
+  width: 220px;
+  height: 290px;
+  margin-left: 70px;
+}
+main section .ventadeProductos .producto figure .imagen3 {
+  width: 290px;
+  height: 290px;
+  margin-left: 50px;
+}
+main section .ventadeProductos .producto figure .imagen4 {
+  width: 350px;
+  margin-left: 10px;
+}
+main section .ventadeProductos .producto figure .imagen5 {
+  width: 290px;
+  height: 290px;
+  margin-left: 50px;
+}
+main section .ventadeProductos .producto figure .imagen6 {
+  width: 290px;
+  height: 290px;
+  margin-left: 50px;
+}
+main section .ventadeProductos .producto figure .imagen10 {
+  width: 290px;
+  height: 290px;
+  margin-left: 50px;
+}
+main section .ventadeProductos .producto .infoProducto {
+  padding: 0px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main section .ventadeProductos .producto .infoProducto .tituloProducto {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 19px;
+  color: grey;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+main section .ventadeProductos .producto .infoProducto .precio {
+  font-size: 18px;
+  color: grey;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+main section .ventadeProductos .producto .infoProducto button {
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+  background: none;
+  background-color: rgb(148, 148, 148);
+  color: #fff;
+}
+
+#formulario {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+}
+#formulario a button {
+  border-radius: 10px;
+  background-color: #c7c7f3;
+  border: 0px solid;
+}
+#formulario a :hover {
+  background-color: #fff;
+  color: black;
+}
+#formulario .contenedorFormulario {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  max-width: 1000px;
+  transition: all 1s ease;
+  margin: 10px;
+}
+#formulario .contenedorFormulario .informacion {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #c7eef3;
+}
+#formulario .contenedorFormulario .informacion .infoBienvenida {
+  width: 40%;
+  padding: 0px 30px;
+}
+#formulario .contenedorFormulario .informacion .infoBienvenida h1 {
+  font-size: 40px;
+  color: black;
+  font-family: "Montserrat";
+}
+#formulario .contenedorFormulario .informacion .infoBienvenida p {
+  margin: 12px 0px;
+  color: #555;
+  font-family: "Poppins";
+}
+#formulario .contenedorFormulario .informacion .infoBienvenida input {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #9191bd;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #9191bd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#formulario .contenedorFormulario .informacion .infoBienvenida :hover {
+  background-color: #9191bd;
+  border: none;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear {
+  padding: 0px 30px;
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear h2 {
+  color: black;
+  font-size: 40px;
+  font-family: "Montserrat";
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear .iconos {
+  margin: 15px 0px;
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear .iconos i {
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0px 10px;
+  color: #9191bd;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear .iconos :hover {
+  background-color: #c7c7f3;
+  color: white;
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear p {
+  color: #555;
+  font-family: "Poppins";
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear .form {
+  margin: 30px 0px 0px 0px;
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear .form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 0px 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear .form label i {
+  color: #a7a7a7;
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear .form label input {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: none !important;
+  outline: none !important;
+  border-radius: 20px;
+  color: #333;
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear .form input {
+  background-color: #9191bd;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#formulario .contenedorFormulario .informacion .formularioInformacion .formularioCrear .form input :hover {
+  background-color: #7a7a9a;
+}
+#formulario .oculto {
+  position: absolute;
+  transform: translatey(-200%);
+}
+
+/*# sourceMappingURL=app.css.map */

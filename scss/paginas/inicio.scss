@@ -1,0 +1,655 @@
+main{
+    height: 2800px;
+    #carouselExampleIndicators{
+        width: 100%;
+        height: 600px;
+        background-color: black;
+        // .carousel-indicators{
+            
+        // }
+        .carousel-inner{
+            .carousel-item{
+                .divisionImagen1{
+                    display: flex;
+                    flex-direction: row;
+                    #imagenCarrusel1{
+                        height: 600px;
+                        width: 950px;
+                    }
+                    #imagenCarrusel2{
+                        height: 600px;
+                        width: 950px;
+                        margin-left: 10px;                    
+                    }
+                }
+                .divisionImagen2{
+                    display: flex;
+                    flex-direction: row;
+                    #imagenCarrusel3{
+                        height: 600px;
+                        width: 650px;
+                        margin-left: 30px;
+                    }
+                    #imagenCarrusel4{
+                        height: 600px;
+                        margin-left: 20px;
+                    }
+                    #imagenCarrusel5{
+                        height: 600px;
+                        width: 700px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        .carousel-control-prev{
+            background-color: rgba(0, 0, 0, 0.508);
+            width: 150px;
+            // .carousel-control-prev-icon{
+            //     background-color: black;
+            //     border-radius: 20px;
+            //     width: 30px;
+            //     height: 30px;
+            // }
+        }
+        .carousel-control-next{
+            background-color: rgba(0, 0, 0, 0.508);
+            width: 150px;
+
+        }
+    
+    }
+    section{
+        width: 70%;
+        height: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        .tiposdeObras{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            .cuadroArte1{
+                width: 350px;
+                height: 320px;
+                margin-left: 70px;
+                margin-top: 40px;
+                background-color: white;
+                position: relative;
+                .imgFondo1{
+                    img{
+                        width: 100%;
+                        height: 320px;                        
+                    }
+                }
+                .recuadro{
+                    width: 90%;
+                    height: 80%;
+                    border: 1px solid rgba(0, 0, 0, 0.349);
+                    background-color:transparent;
+                    margin-top: -285px;
+                    margin-left: 17px;
+                    position: absolute; 
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 110px;
+                        font-family: 'Popping';
+                        font-size: 20px;
+                        font-weight: 550;
+                        text-transform: uppercase;
+                        color: black;
+
+                    }
+                }
+            }
+            .cuadroArte2{
+                width: 350px;
+                height: 320px;
+                margin-left: 50px;
+                margin-top: 40px;
+                background-color: white;
+                position: relative;
+                .imgFondo1{
+                    img{
+                        width: 100%;
+                        height: 320px;                        
+                    }
+                }
+                .recuadro{
+                    width: 90%;
+                    height: 80%;
+                    border: 1px solid rgba(0, 0, 0, 0.349);
+                    background-color:transparent;
+                    margin-top: -285px;
+                    margin-left: 17px;
+                    position: absolute; 
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 110px;
+                        font-family: 'Popping';
+                        font-size: 20px;
+                        font-weight: 550;
+                        text-transform: uppercase;
+                        color: black;
+
+                    }
+                }
+            }
+            .cuadroArte3{
+                width: 350px;
+                height: 320px;
+                margin-left: 50px;
+                margin-top: 40px;
+                background-color: white;
+                position: relative;
+                .imgFondo1{
+                    img{
+                        width: 100%;
+                        height: 320px;                        
+                    }
+                }
+                .recuadro{
+                    width: 90%;
+                    height: 80%;
+                    border: 1px solid rgba(0, 0, 0, 0.349);
+                    background-color:transparent;
+                    margin-top: -285px;
+                    margin-left: 17px;
+                    position: absolute; 
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 110px;
+                        font-family: 'Popping';
+                        font-size: 20px;
+                        font-weight: 550;
+                        text-transform: uppercase;
+                        color: black;
+
+                    }
+                }
+            }
+        }
+        .iconoSubir{
+            margin-left: 1550px;
+            position: fixed;
+            img{
+                margin-top: -350px;
+            }
+        }
+        .obrasDestadas{
+            display: flex;
+            justify-content: center;
+        
+            p{
+                display: inline-block;
+                position: relative;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                margin-top: 30px;
+                
+            }::after, ::before{
+                content: '';
+                position: absolute;
+                width: 490px;
+                height: 2px;
+                background-color: rgba(181, 178, 178, 0.374);
+                top: 15px;
+            
+            }::before{
+                left: -520px;
+            }
+            ::after{
+                right:-520px;
+            }
+        }
+        .ventadeProductos{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            .producto{
+                border-bottom-right-radius: 15px;
+                box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+                -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+                -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+                margin-top: 20px;
+                figure{
+                    overflow: hidden;
+                    :hover{
+                        transform: scale(1.2);
+                    }
+                    img{
+                        width: 90%;
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 10px 10px 0 0;
+                        transition: all .5s;
+                    }
+                    .imagen1{
+                        width: 280px;
+                        height: 380px;
+                        margin-left: 40px;
+                    }
+                    .imagen2{
+                        width: 220px;
+                        height: 290px;
+                        margin-left: 70px;
+                    }
+                    .imagen3{
+                        width: 290px;
+                        height: 290px;
+                        margin-left: 50px;
+                    }
+                    .imagen4{
+                        width: 350px;
+                        margin-left: 10px;
+                    }
+                    .imagen5{
+                        width: 290px;
+                        height: 290px;
+                        margin-left: 50px;
+                    }
+                    .imagen6{
+                        width: 290px;
+                        height: 290px;
+                        margin-left: 50px;
+                    }
+                    .imagen10{
+                        width: 290px;
+                        height: 290px;
+                        margin-left: 50px;
+                    }
+                }
+                .infoProducto{
+                    padding: 0px 30px;
+                    line-height: 2;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .tituloProducto{
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 19px;
+                        color: grey;
+                        margin-left: 10px;
+                        margin-top: 15px;
+                        margin-bottom: 0px;
+                    }
+                    .precio{
+                        font-size: 18px;
+                        color: grey;
+                        margin-left: 10px;
+                        margin-top: -10px;
+                        
+                    }
+                    button{
+                        border: none;
+                        border-radius: 10px;
+                        height: 30px;
+                        margin-bottom: 10px;
+                        background: none;
+                        background-color: rgb(148, 148, 148);
+                        color: #fff;
+                    }
+                }
+            }
+           
+               
+        }
+    }
+}
+
+// .listaProductos1{
+//                 display: flex;
+//                 flex-direction: row;
+//                 width: 100%;
+//                 height: 450px;
+//                 // background-color: antiquewhite;
+//                 .producto1{
+//                     width: 350px;
+//                     height: 98%;
+//                     background-color: white;
+//                     margin-top: 9px;
+//                     margin-left: 10px;
+//                     border-bottom-right-radius: 15px;
+//                     box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     img{
+//                         width: 70%;
+//                         height: 270px;
+//                         margin-left: 52px;
+//                         margin-top: 10px;
+//                         border: 2px solid black;                        
+//                     }
+//                     .tituloProducto{
+//                         font-family: 'Times New Roman', Times, serif;
+//                         font-size: 17px;
+//                         color: grey;
+//                         margin-left: 20px;
+//                         margin-top: 15px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .precio{
+//                         color: grey;
+//                         margin-left: 30px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .botonComprar{
+//                         border: 0px solid;
+//                         border-radius: 10px;
+//                         height: 30px;
+//                         margin-left: 140px;
+//                         p{
+//                             font-size: 16px;
+//                             font-family: 'Times New Roman', Times, serif;
+//                         }
+//                     }
+//                 }
+//                 .producto2{
+//                     width: 350px;
+//                     height: 98%;
+//                     background-color: white;
+//                     margin-top: 9px;
+//                     margin-left: 40px;  
+//                     border-bottom-right-radius: 15px;                 
+//                     box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     img{
+//                         width: 70%;
+//                         height: 280px;
+//                         margin-left: 52px;
+//                         // border: 2px solid black;                        
+//                     }
+//                     .tituloProducto{
+//                         font-family: 'Times New Roman', Times, serif;
+//                         font-size: 17px;
+//                         color: grey;
+//                         margin-left: 20px;
+//                         margin-top: 15px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .precio{
+//                         color: grey;
+//                         margin-left: 30px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .botonComprar{
+//                         border: 0px solid;
+//                         border-radius: 10px;
+//                         height: 30px;
+//                         margin-left: 140px;
+//                         p{
+//                             font-size: 16px;
+//                             font-family: 'Times New Roman', Times, serif;
+//                         }
+//                     }
+//                 }
+//                 .producto3{
+//                     width: 350px;
+//                     height: 98%;
+//                     background-color: white;
+//                     margin-top: 9px;
+//                     margin-left: 40px;
+//                     border-bottom-right-radius: 15px;
+//                     box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     img{
+//                         width: 95%;
+//                         height: 270px;
+//                         margin-left: 5px;
+//                         margin-top: 10px;
+//                         border: 2px solid black;                        
+//                     }
+//                     .tituloProducto{
+//                         font-family: 'Times New Roman', Times, serif;
+//                         font-size: 17px;
+//                         color: grey;
+//                         margin-left: 20px;
+//                         margin-top: 15px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .precio{
+//                         color: grey;
+//                         margin-left: 30px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .botonComprar{
+//                         border: 0px solid;
+//                         border-radius: 10px;
+//                         height: 30px;
+//                         margin-left: 140px;
+//                         p{
+//                             font-size: 16px;
+//                             font-family: 'Times New Roman', Times, serif;
+//                         }
+//                     }
+//                 }
+//             }
+//             .listaProductos2{
+//                 display: flex;
+//                 flex-direction: row;
+//                 width: 100%;
+//                 height: 450px;
+//                 // background-color: antiquewhite;
+//                 margin-top: 50px;
+//                 .producto4{
+//                     width: 350px;
+//                     height: 98%;
+//                     background-color: white;
+//                     margin-top: 9px;
+//                     margin-left: 10px;
+//                     border-bottom-right-radius: 15px;
+//                     box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     img{
+//                         width: 70%;
+//                         height: 270px;
+//                         margin-left: 52px;
+//                         margin-top: 10px;
+//                         border: 2px solid black;                        
+//                     }
+//                     .tituloProducto{
+//                         font-family: 'Times New Roman', Times, serif;
+//                         font-size: 17px;
+//                         color: grey;
+//                         margin-left: 20px;
+//                         margin-top: 15px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .precio{
+//                         color: grey;
+//                         margin-left: 30px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .botonComprar{
+//                         border: 0px solid;
+//                         border-radius: 10px;
+//                         height: 30px;
+//                         margin-left: 140px;
+//                         p{
+//                             font-size: 16px;
+//                             font-family: 'Times New Roman', Times, serif;
+//                         }
+//                     }
+//                 }
+//                 .producto5{
+//                     width: 350px;
+//                     height: 98%;
+//                     background-color: white;
+//                     margin-top: 9px;
+//                     margin-left: 40px;  
+//                     border-bottom-right-radius: 15px;                 
+//                     box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     img{
+//                         width: 70%;
+//                         height: 280px;
+//                         margin-left: 52px;
+//                         // border: 2px solid black;                        
+//                     }
+//                     .tituloProducto{
+//                         font-family: 'Times New Roman', Times, serif;
+//                         font-size: 17px;
+//                         color: grey;
+//                         margin-left: 20px;
+//                         margin-top: 15px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .precio{
+//                         color: grey;
+//                         margin-left: 30px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .botonComprar{
+//                         border: 0px solid;
+//                         border-radius: 10px;
+//                         height: 30px;
+//                         margin-left: 140px;
+//                         p{
+//                             font-size: 16px;
+//                             font-family: 'Times New Roman', Times, serif;
+//                         }
+//                     }
+//                 }
+//                 .producto6{
+//                     width: 350px;
+//                     height: 98%;
+//                     background-color: white;
+//                     margin-top: 9px;
+//                     margin-left: 40px;
+//                     border-bottom-right-radius: 15px;
+//                     box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     img{
+//                         width: 95%;
+//                         height: 270px;
+//                         margin-left: 5px;
+//                         margin-top: 10px;
+//                         border: 2px solid black;                        
+//                     }
+//                     .tituloProducto{
+//                         font-family: 'Times New Roman', Times, serif;
+//                         font-size: 17px;
+//                         color: grey;
+//                         margin-left: 20px;
+//                         margin-top: 15px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .precio{
+//                         color: grey;
+//                         margin-left: 30px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .botonComprar{
+//                         border: 0px solid;
+//                         border-radius: 10px;
+//                         height: 30px;
+//                         margin-left: 140px;
+//                         p{
+//                             font-size: 16px;
+//                             font-family: 'Times New Roman', Times, serif;
+//                         }
+//                     }
+//                 }
+//             }
+//             .listaProductos3{
+//                 display: flex;
+//                 flex-direction: row;
+//                 width: 100%;
+//                 height: 450px;
+//                 // background-color: antiquewhite;
+//                 margin-top: 50px;
+//                 .producto7{
+//                     width: 350px;
+//                     height: 98%;
+//                     background-color: white;
+//                     margin-top: 9px;
+//                     margin-left: 190px;
+//                     border-bottom-right-radius: 15px;
+//                     box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     img{
+//                         width: 60%;
+//                         height: 270px;
+//                         margin-left: 52px;
+//                         margin-top: 10px;
+//                         border: 2px solid black;                        
+//                     }
+//                     .tituloProducto{
+//                         font-family: 'Times New Roman', Times, serif;
+//                         font-size: 17px;
+//                         color: grey;
+//                         margin-left: 20px;
+//                         margin-top: 15px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .precio{
+//                         color: grey;
+//                         margin-left: 30px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .botonComprar{
+//                         border: 0px solid;
+//                         border-radius: 10px;
+//                         height: 30px;
+//                         margin-left: 140px;
+//                         p{
+//                             font-size: 16px;
+//                             font-family: 'Times New Roman', Times, serif;
+//                         }
+//                     }
+//                 }
+//                 .producto8{
+//                     width: 350px;
+//                     height: 98%;
+//                     background-color: white;
+//                     margin-top: 9px;
+//                     margin-left: 40px;  
+//                     border-bottom-right-radius: 15px;                 
+//                     box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -webkit-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     -moz-box-shadow: 9px 7px 5px 0px rgba(0,0,0,0.11);
+//                     img{
+//                         width: 70%;
+//                         height: 280px;
+//                         margin-left: 52px;
+//                         border: 2px solid black;                        
+//                     }
+//                     .tituloProducto{
+//                         font-family: 'Times New Roman', Times, serif;
+//                         font-size: 17px;
+//                         color: grey;
+//                         margin-left: 20px;
+//                         margin-top: 15px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .precio{
+//                         color: grey;
+//                         margin-left: 30px;
+//                         margin-bottom: 10px;
+//                     }
+//                     .botonComprar{
+//                         border: 0px solid;
+//                         border-radius: 10px;
+//                         height: 30px;
+//                         margin-left: 140px;
+//                         p{
+//                             font-size: 16px;
+//                             font-family: 'Times New Roman', Times, serif;
+//                         }
+//                     }
+//                 }
+//             }
+  
